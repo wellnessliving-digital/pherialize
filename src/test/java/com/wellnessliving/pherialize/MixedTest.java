@@ -21,7 +21,7 @@
  * IN THE SOFTWARE. 
  */
 
-package de.ailis.pherialize;
+package com.wellnessliving.pherialize;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -31,7 +31,7 @@ import java.util.Map;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import de.ailis.pherialize.test.EnumClass;
+import com.wellnessliving.pherialize.test.EnumClass;
 
 
 /**

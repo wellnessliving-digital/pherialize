@@ -21,7 +21,7 @@
  * IN THE SOFTWARE. 
  */
 
-package de.ailis.pherialize;
+package com.wellnessliving.pherialize;
 
 import java.util.Map;
 

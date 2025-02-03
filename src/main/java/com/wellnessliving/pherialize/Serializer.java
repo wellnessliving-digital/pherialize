@@ -21,7 +21,7 @@
  * IN THE SOFTWARE.
  */
 
-package de.ailis.pherialize;
+package com.wellnessliving.pherialize;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
@@ -33,7 +33,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import de.ailis.pherialize.exceptions.SerializeException;
+import com.wellnessliving.pherialize.exceptions.SerializeException;
 
 
 /**

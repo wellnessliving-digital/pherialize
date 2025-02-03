@@ -1,52 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  
-  <groupId>de.ailis.pherialize</groupId>
-  <artifactId>pherialize</artifactId>
-  <packaging>jar</packaging>
-  <name>Pherialize</name>
-  <version>1.2.2-SNAPSHOT</version>
-  <description>
-    Library for serializing Java objects into the
-    PHP serializing format and unserializing data from
-    this format back into Java objects.
-  </description>
-  <inceptionYear>2025</inceptionYear>
-  <url>http://kayahr.github.com/${project.artifactId}/</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <licenses>
-    <license>
-      <name>MIT License</name>
-      <url>LICENSE.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
+    <groupId>com.wellnessliving</groupId>
+    <artifactId>pherialize</artifactId>
+    <packaging>jar</packaging>
+    <name>WL Pherialize</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>
+        Library for serializing Java objects into the
+        PHP serializing format and unserializing data from
+        this format back into Java objects.
+    </description>
+    <inceptionYear>2025</inceptionYear>
+    <url/>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-       
-  <issueManagement>
-    <system>GitHub</system>
-    <url>https://github.com/kayahr/${project.artifactId}/issues</url>
-  </issueManagement>
-  
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
-  
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>LICENSE.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <properties>
+        <java.version>22</java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>

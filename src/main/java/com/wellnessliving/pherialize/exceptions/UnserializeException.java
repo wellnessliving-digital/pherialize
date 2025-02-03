@@ -21,27 +21,28 @@
  * IN THE SOFTWARE.
  */
 
-package de.ailis.pherialize.exceptions;
+package com.wellnessliving.pherialize.exceptions;
+
 
 
 /**
- * Base exception for Pherialize problems.
+ * Exception thrown when someting goes wrong while unserializing.
  * 
  * @author Klaus Reimer (k@ailis.de)
  * @version $Revision$
  */
 
-abstract public class PherializeException extends RuntimeException
+public class UnserializeException extends PherializeException
 {
     /** Serial version UID */
-    private static final long serialVersionUID = 1479169743443565173L;
+    private static final long serialVersionUID = -7127648595193318947L;
 
 
     /**
      * Constructor
      */
 
-    public PherializeException()
+    public UnserializeException()
     {
         super();
     }
@@ -54,7 +55,7 @@ abstract public class PherializeException extends RuntimeException
      *            The exception message
      */
 
-    public PherializeException(final String message)
+    public UnserializeException(final String message)
     {
         super(message);
     }
@@ -69,7 +70,7 @@ abstract public class PherializeException extends RuntimeException
      *            The root cause
      */
 
-    public PherializeException(final String message, final Throwable cause)
+    public UnserializeException(final String message, final Throwable cause)
     {
         super(message, cause);
     }
@@ -82,7 +83,7 @@ abstract public class PherializeException extends RuntimeException
      *            The root cause
      */
 
-    public PherializeException(final Throwable cause)
+    public UnserializeException(final Throwable cause)
     {
         super(cause);
     }

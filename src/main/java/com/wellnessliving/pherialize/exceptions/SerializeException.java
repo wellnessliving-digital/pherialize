@@ -21,38 +21,70 @@
  * IN THE SOFTWARE.
  */
 
-package de.ailis.pherialize;
+package com.wellnessliving.pherialize.exceptions;
 
 
 
 /**
- * A test class representing a person
+ * Exception thrown when someting goes wrong while serializing.
  * 
  * @author Klaus Reimer (k@ailis.de)
  * @version $Revision$
  */
 
-public class InheritedPerson extends Person
+public class SerializeException extends PherializeException
 {
     /** Serial version UID */
-    private static final long serialVersionUID = -3282108166577595725L;
+    private static final long serialVersionUID = 5304443329670892370L;
 
-    
+
+    /**
+     * Constructor
+     */
+
+    public SerializeException()
+    {
+        super();
+    }
+
+
     /**
      * Constructor
      * 
-     * @param name
-     *            The name
-     * @param age
-     *            The age
-     * @param earthling
-     *            If person is an earthling
-     * @param special
-     *            Special stuff
+     * @param message
+     *            The exception message
      */
 
-    public InheritedPerson(final String name, final int age, final boolean earthling, final Object special)
+    public SerializeException(final String message)
     {
-        super(name, age, earthling, special);
+        super(message);
+    }
+
+
+    /**
+     * Constructor
+     * 
+     * @param message
+     *            The exception message
+     * @param cause
+     *            The root cause
+     */
+
+    public SerializeException(final String message, final Throwable cause)
+    {
+        super(message, cause);
+    }
+
+
+    /**
+     * Constructor
+     * 
+     * @param cause
+     *            The root cause
+     */
+
+    public SerializeException(final Throwable cause)
+    {
+        super(cause);
     }
 }
